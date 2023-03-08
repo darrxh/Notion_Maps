@@ -1,3 +1,3 @@
-# Notion_Maps
+Notionest
 
-Application that adds Google Maps integration into Notion tables using Notion and Google Maps API.
+Adds additional functionality such as API integration, cross element syncing, and live updates
