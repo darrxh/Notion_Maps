@@ -74,6 +74,17 @@ def find_top_result(query):
 
 query = input("Enter your query (e.g., 'restaurants'): ")
 results = find_restaurants(query)
+if (results):
+    print(f"Name: {results['name']}")
+    print(f"Address: {results['address']}")
+    print(f"Rating: {results['rating']}")
+    print(f"Price Level: {results['price_level']}")
+    print(f"Website: {results['website']}")
+    print("Opening Hours:")
+    for hours in results['opening_hours']:
+        print(hours)
+else:
+    print("No restaurant found.")
 
 gmaps = googlemaps.Client(key=os.getenv("API_KEY"))
 
